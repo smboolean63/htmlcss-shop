@@ -1,0 +1,68 @@
+/*-----------
+    Reset
+------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------
+    Common
+------------*/
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-----------
+    Main
+------------*/
+
+.col {
+    float: left;
+    width: calc( 100% / 3 - 8px);
+    margin: 0 4px;
+}
+
+.product {
+    position: relative;
+}
+.product img {
+    width: 100%;
+    display: block;
+}
+.product-discount {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.product-wishlist {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+.product:hover .product-wishlist {
+    display: block;
+}
+
+.product .product-img-2 {
+    display: none;
+}
+
+.product:hover .product-img-1 {
+    display: none;
+}
+.product:hover .product-img-2 {
+    display: block;
+}
